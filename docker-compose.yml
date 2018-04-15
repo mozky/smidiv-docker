@@ -15,7 +15,8 @@ services:
     build: ./smidiv-api
     container_name: "smidiv-api"
     environment:
-      - API_URL=smidiv-api
+      - API_HOST=smidiv.javiersl.com
+      - API_PORT=10010
       - DB_HOST=mongo
       - DB_PORT=27017
     ports:
@@ -24,6 +25,7 @@ services:
     build: ./smidiv-react
     container_name: "smidiv-react"
     environment:
-      - API_HOST=smidiv-api
+      - API_HOST=smidiv.javiersl.com
+      - API_PORT=10010
     ports:
       - "80:3000"
