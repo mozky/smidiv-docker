@@ -16,7 +16,8 @@ services:
     container_name: "smidiv-api"
     environment:
       - API_URL=smidiv-api
-      - MONGO_URL=mongo
+      - DB_HOST=mongo
+      - DB_PORT=27017
     ports:
       - "10010:10010"
   smidiv-react:
