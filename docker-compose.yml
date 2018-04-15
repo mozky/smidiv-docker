@@ -24,6 +24,6 @@ services:
     build: ./smidiv-react
     container_name: "smidiv-react"
     environment:
-      - API_URL=smidiv-api
+      - API_HOST=smidiv-api
     ports:
       - "80:3000"
