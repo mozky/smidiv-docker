@@ -10,7 +10,7 @@ services:
       - ./data/db:/data/db
     ports:
       - "27017:27017"
-    command: mongod --smallfiles --logpath=/dev/null
+    command: mongod --bind_ip_all --smallfiles --logpath=/dev/null
   smidiv-api:
     build: ./smidiv-api
     container_name: "smidiv-api"
