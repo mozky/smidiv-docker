@@ -1,0 +1,6 @@
+[submodule "smidiv-api"]
+	path = smidiv-api
+	url = https://github.com/mozky/smidiv-api
+[submodule "smidiv-react"]
+	path = smidiv-react
+	url = https://github.com/mozky/smidiv-react
